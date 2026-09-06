@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Telephone Pictionary – The Draw &amp; Guess Party Game With Friends</title>
+<meta name="description" content="Write a weird word, someone draws it, the next player guesses the drawing... and it all ends in chaos. Telephone Pictionary, free on Android and iOS.">
+<meta name="keywords" content="telephone pictionary game, draw and guess game, party game with friends, broken telephone app, gartic phone alternative, mobile multiplayer drawing game">
+<meta name="author" content="Crazy Ideas / Ismael González">
+<link rel="canonical" href="https://telefono-escacharrado.devcodelight.com/en/">
+<link rel="alternate" hreflang="es" href="https://telefono-escacharrado.devcodelight.com/">
+<link rel="alternate" hreflang="en" href="https://telefono-escacharrado.devcodelight.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://telefono-escacharrado.devcodelight.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://telefono-escacharrado.devcodelight.com/en/">
+<meta property="og:title" content="Telephone Pictionary – The Draw & Guess Party Game With Friends">
+<meta property="og:description" content="A word turns into a drawing, the drawing turns into another word, and the final result is never what it started as. Guaranteed laughs with 2 to 4 players.">
+<meta property="og:image" content="https://play-lh.googleusercontent.com/gm8FfUSB_QYpm0H7lwT2YGpUlWkP2AaOkkic1Cpxy836YlvP1pGF5R6UduthFF1KNwK34ks0NaphzCmkpArvleY=s1200">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:site_name" content="Telephone Pictionary">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Telephone Pictionary – The Draw & Guess Party Game With Friends">
+<meta name="twitter:description" content="Write a weird word, someone draws it, the next player guesses... and it all ends in chaos. Free on Android and iOS.">
+<meta name="twitter:image" content="https://play-lh.googleusercontent.com/gm8FfUSB_QYpm0H7lwT2YGpUlWkP2AaOkkic1Cpxy836YlvP1pGF5R6UduthFF1KNwK34ks0NaphzCmkpArvleY=s1200">
+
+<link rel="icon" href="https://play-lh.googleusercontent.com/gm8FfUSB_QYpm0H7lwT2YGpUlWkP2AaOkkic1Cpxy836YlvP1pGF5R6UduthFF1KNwK34ks0NaphzCmkpArvleY=s192" sizes="192x192">
+<link rel="apple-touch-icon" href="https://play-lh.googleusercontent.com/gm8FfUSB_QYpm0H7lwT2YGpUlWkP2AaOkkic1Cpxy836YlvP1pGF5R6UduthFF1KNwK34ks0NaphzCmkpArvleY=s180">
+<meta name="theme-color" content="#16142B">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Telephone Pictionary",
+  "applicationCategory": "GameApplication",
+  "applicationSubCategory": "Party Game",
+  "operatingSystem": "ANDROID, IOS",
+  "url": "https://telefono-escacharrado.devcodelight.com/en/",
+  "image": "https://play-lh.googleusercontent.com/gm8FfUSB_QYpm0H7lwT2YGpUlWkP2AaOkkic1Cpxy836YlvP1pGF5R6UduthFF1KNwK34ks0NaphzCmkpArvleY=s512",
+  "description": "A drawing and guessing party game for 2 to 4 friends. A word turns into a drawing, the drawing turns into another word, and the final result is never what it started as.",
+  "inLanguage": "en-US",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Crazy Ideas"
+  },
+  "downloadUrl": [
+    "https://play.google.com/store/apps/details?id=com.telefonoescacharrado&hl=es",
+    "https://apps.apple.com/es/app/tel%C3%A9fono-escacharrado/id6739186463"
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is Telephone Pictionary free?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, the game is free and ad-supported. If you'd rather play without interruptions, you can buy the ad-free Premium version from inside the app." }
+    },
+    {
+      "@type": "Question",
+      "name": "How many players do you need?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Each match is for 2 to 4 players. You can all play from the same couch or each from your own phone, wherever you are." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I play if I don't have friends online?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. The bot mode lets you practice your drawings (and your patience) without depending on anyone else being available." }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does a match last?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Matches are designed to last under 5 minutes, so they fit into any spare moment: before bed, at dinner, or while waiting for food." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which devices is it available on?",
+      "acceptedAnswer": { "@type": "Answer", "text": "You can download it on Android through Google Play and on iPhone or iPad through the App Store." }
+    },
+    {
+      "@type": "Question",
+      "name": "How do the rankings work?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Every point you earn drawing or guessing counts toward three separate leaderboards: weekly, monthly, and yearly, so there's always a new race to win." }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --ink:#16142B;
+    --ink-soft:#4C4A6B;
+    --paper:#FBF6EC;
+    --paper-dim:#F1EADA;
+    --coral:#FF5C72;
+    --coral-dark:#E23F57;
+    --mustard:#FFC94A;
+    --teal:#2FC1A6;
+    --line:#E4DCC8;
+    --radius:18px;
+    --maxw:1180px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Work Sans", sans-serif;
+    font-size:17px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:"Baloo 2", sans-serif;
+    line-height:1.08;
+    margin:0;
+    color:var(--ink);
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  .visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline:3px solid var(--teal);
+    outline-offset:3px;
+  }
+
+  /* ---------- header ---------- */
+  header.site{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,246,236,.92);
+    backdrop-filter:blur(6px);
+    border-bottom:2px solid var(--ink);
+  }
+  .nav{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px;
+  }
+  .brand{
+    display:flex; align-items:center; gap:10px;
+    font-family:"Baloo 2",sans-serif; font-weight:700; font-size:1.15rem;
+    text-decoration:none;
+  }
+  .brand img{width:38px;height:38px;border-radius:10px;border:2px solid var(--ink);}
+  .nav-links{display:flex; gap:28px; list-style:none; margin:0; padding:0;}
+  .nav-links a{
+    text-decoration:none; font-weight:600; font-size:.95rem; color:var(--ink);
+    padding-bottom:3px; border-bottom:2px solid transparent;
+  }
+  .nav-links a:hover{border-color:var(--coral);}
+  .nav-cta{
+    display:inline-flex; align-items:center; gap:8px;
+    background:var(--ink); color:var(--paper);
+    padding:10px 18px; border-radius:999px;
+    text-decoration:none; font-weight:700; font-size:.92rem;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--coral-dark);}
+  .burger{display:none;background:none;border:2px solid var(--ink);border-radius:8px;padding:6px 9px;font-size:1.1rem;cursor:pointer;}
+  .lang-switch{
+    font-family:"Baloo 2",sans-serif; font-weight:700; font-size:.85rem;
+    text-decoration:none; color:var(--ink); border:2px solid var(--ink);
+    border-radius:999px; padding:6px 11px; margin-right:12px;
+  }
+  .lang-switch:hover{background:var(--ink); color:var(--paper);}
+  @media (max-width:840px){ .lang-switch{margin-right:8px;} }
+
+  @media (max-width:840px){
+    .nav-links{
+      position:absolute; top:100%; left:0; right:0;
+      background:var(--paper); border-bottom:2px solid var(--ink);
+      flex-direction:column; padding:16px 24px; gap:16px;
+      display:none;
+    }
+    .nav-links.open{display:flex;}
+    .burger{display:inline-block;}
+    .nav-cta{padding:9px 14px;font-size:.85rem;}
+  }
+
+  /* ---------- hero ---------- */
+  .hero{
+    background:var(--ink);
+    color:var(--paper);
+    padding:64px 0 90px;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid; grid-template-columns:1.05fr .95fr; gap:56px; align-items:center;
+  }
+  .eyebrow-free{margin:0;}
+  .hero h1{
+    font-size:clamp(2.3rem, 4.6vw, 3.4rem);
+    color:var(--paper);
+  }
+  .hero h1 span.doodle{position:relative; white-space:nowrap;}
+  .hero h1 span.doodle svg{
+    position:absolute; left:0; bottom:-10px; width:100%; height:14px;
+  }
+  .hero p.lead{
+    margin-top:22px; font-size:1.15rem; color:#CFCBE6; max-width:46ch;
+  }
+  .store-badges{
+    display:flex; gap:14px; margin-top:32px; flex-wrap:wrap;
+  }
+  .store-badges img{height:52px; width:auto;}
+  .store-badges a{transition:transform .15s ease;}
+  .store-badges a:hover{transform:translateY(-2px);}
+  .hero-note{
+    margin-top:16px; font-size:.88rem; color:#9C97BE;
+  }
+
+  /* chain visual */
+  .chain{
+    position:relative;
+    display:flex; flex-direction:column; gap:18px;
+  }
+  .chain-card{
+    background:var(--paper); color:var(--ink);
+    border:2.5px solid var(--ink);
+    border-radius:14px;
+    padding:14px 16px;
+    width:min(320px, 100%);
+    box-shadow:6px 6px 0 rgba(0,0,0,.35);
+  }
+  .chain-card.word{align-self:flex-start; transform:rotate(-3deg); background:var(--mustard);}
+  .chain-card.drawing{align-self:center; transform:rotate(2deg);}
+  .chain-card.guess{align-self:flex-end; transform:rotate(-2deg); background:var(--coral); color:var(--paper); border-color:var(--paper);}
+  .chain-card .tag{
+    font-family:"Baloo 2",sans-serif; font-weight:700; font-size:.78rem;
+    text-transform:lowercase; opacity:.75; display:block; margin-bottom:4px;
+  }
+  .chain-card .val{font-weight:600; font-size:1.05rem;}
+  .chain-card.drawing svg{width:100%; height:auto; display:block;}
+  .chain-arrow{align-self:center; opacity:.6;}
+
+  @media (max-width:900px){
+    .hero .wrap{grid-template-columns:1fr;}
+    .chain{margin-top:8px;}
+  }
+
+  /* ---------- sections ---------- */
+  section{padding:76px 0;}
+  section.tight{padding:56px 0;}
+  h2{font-size:clamp(1.7rem,3vw,2.3rem);}
+  .section-lead{color:var(--ink-soft); max-width:56ch; margin-top:12px; font-size:1.05rem;}
+
+  /* steps */
+  .steps{
+    margin-top:44px; display:grid; gap:26px;
+    grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  }
+  .step{position:relative; padding-top:6px;}
+  .step .num{
+    font-family:"Baloo 2",sans-serif; font-weight:800; font-size:2.1rem;
+    color:var(--coral); display:block; margin-bottom:6px;
+  }
+  .step h3{font-size:1.1rem; margin-bottom:6px;}
+  .step p{margin:0; color:var(--ink-soft); font-size:.97rem;}
+
+  /* features corkboard */
+  .board{
+    background:var(--paper-dim);
+    border-top:2px solid var(--line);
+    border-bottom:2px solid var(--line);
+  }
+  .feature-grid{
+    margin-top:44px;
+    display:grid; gap:22px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  }
+  .feature{
+    background:var(--paper);
+    border:2px solid var(--ink);
+    border-radius:14px;
+    padding:22px;
+    transform:rotate(var(--r,0deg));
+  }
+  .feature:nth-child(1){--r:-1.1deg;}
+  .feature:nth-child(2){--r:0.8deg;}
+  .feature:nth-child(3){--r:-0.6deg;}
+  .feature:nth-child(4){--r:1.2deg;}
+  .feature:nth-child(5){--r:-1deg;}
+  .feature:nth-child(6){--r:0.5deg;}
+  .feature .icon{
+    width:44px;height:44px;border-radius:10px;
+    display:flex;align-items:center;justify-content:center;
+    font-size:1.35rem; margin-bottom:14px;
+    border:2px solid var(--ink);
+  }
+  .feature:nth-child(3n+1) .icon{background:var(--mustard);}
+  .feature:nth-child(3n+2) .icon{background:var(--coral); color:var(--paper);}
+  .feature:nth-child(3n+3) .icon{background:var(--teal); color:var(--paper);}
+  .feature h3{font-size:1.08rem; margin-bottom:6px;}
+  .feature p{margin:0; color:var(--ink-soft); font-size:.95rem;}
+
+  /* screenshots */
+  .shots{
+    margin-top:44px;
+    display:flex; gap:20px; overflow-x:auto; padding-bottom:14px;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+  }
+  .shots::-webkit-scrollbar{height:8px;}
+  .shots::-webkit-scrollbar-thumb{background:var(--ink); border-radius:8px;}
+  .shot{
+    flex:0 0 auto; width:210px; scroll-snap-align:start;
+    border:2.5px solid var(--ink); border-radius:16px; overflow:hidden;
+    background:var(--ink);
+  }
+  .shot img{width:100%; height:auto;}
+
+  /* download cta band */
+  .cta-band{
+    background:var(--ink); color:var(--paper);
+    text-align:center;
+  }
+  .cta-band h2{color:var(--paper);}
+  .cta-band .section-lead{color:#CFCBE6; margin-left:auto; margin-right:auto;}
+  .cta-band .store-badges{justify-content:center; margin-top:30px;}
+  .price-note{margin-top:18px; font-size:.9rem; color:#9C97BE;}
+
+  /* faq */
+  .faq{max-width:760px; margin-top:40px;}
+  details{
+    border-bottom:2px solid var(--line);
+    padding:18px 0;
+  }
+  details summary{
+    cursor:pointer; font-family:"Baloo 2",sans-serif; font-weight:600;
+    font-size:1.05rem; list-style:none; display:flex; justify-content:space-between; gap:16px;
+  }
+  details summary::-webkit-details-marker{display:none;}
+  details summary::after{
+    content:"+"; font-size:1.4rem; color:var(--coral); flex:0 0 auto; line-height:1;
+  }
+  details[open] summary::after{content:"–";}
+  details p{margin:12px 0 0; color:var(--ink-soft);}
+
+  /* footer */
+  footer{
+    background:var(--paper-dim); border-top:2px solid var(--ink);
+    padding:44px 0 28px; font-size:.92rem; color:var(--ink-soft);
+  }
+  .footer-top{
+    display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap;
+    padding-bottom:24px; border-bottom:1px solid var(--line); margin-bottom:20px;
+  }
+  .footer-links{display:flex; gap:22px; flex-wrap:wrap; list-style:none; padding:0; margin:0;}
+  .footer-links a{text-decoration:none; font-weight:600; color:var(--ink);}
+  .footer-links a:hover{color:var(--coral-dark);}
+  footer .fine{display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+
+  .btn-ghost{
+    display:inline-block; margin-top:8px; font-weight:700; text-decoration:none;
+    color:var(--ink); border-bottom:2px solid var(--coral);
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <nav class="nav wrap">
+    <a class="brand" href="#top">
+      <img src="https://play-lh.googleusercontent.com/gm8FfUSB_QYpm0H7lwT2YGpUlWkP2AaOkkic1Cpxy836YlvP1pGF5R6UduthFF1KNwK34ks0NaphzCmkpArvleY=s96" alt="Telephone Pictionary icon" width="38" height="38">
+      Telephone Pictionary
+    </a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="navlinks">☰</button>
+    <ul class="nav-links" id="navlinks">
+      <li><a href="#como-funciona">How to play</a></li>
+      <li><a href="#modos">Modes & features</a></li>
+      <li><a href="#capturas">Screenshots</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <a class="lang-switch" href="/" hreflang="es" lang="es">ES</a>
+    <a class="nav-cta" href="#descarga">Get it free</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <h1>One word. One <span class="doodle">terrible<svg viewBox="0 0 200 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 Q 40 1, 80 8 T 160 6 T 198 10" fill="none" stroke="#FF5C72" stroke-width="4" stroke-linecap="round"/></svg></span> drawing. Zero sense.</h1>
+        <p class="lead">Telephone Pictionary is the draw-and-guess party game for 2 to 4 friends. A word turns into a drawing, the drawing turns into a completely different word, and by the end of the chain nobody remembers how it started.</p>
+        <div class="store-badges">
+          <a href="https://apps.apple.com/es/app/tel%C3%A9fono-escacharrado/id6739186463" aria-label="Download on the App Store">
+            <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" loading="lazy">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.telefonoescacharrado&hl=en" aria-label="Get it on Google Play">
+            <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" loading="lazy">
+          </a>
+        </div>
+        <p class="hero-note">Free, with over 10K downloads · Matches under 5 minutes</p>
+      </div>
+
+      <div class="chain" aria-hidden="true">
+        <div class="chain-card word">
+          <span class="tag">starting word</span>
+          <span class="val">"Giraffe dancing salsa"</span>
+        </div>
+        <div class="chain-arrow">
+          <svg width="40" height="30" viewBox="0 0 40 30"><path d="M5 5 Q 20 15 35 25" stroke="#CFCBE6" stroke-width="2.5" fill="none" stroke-dasharray="1 7" stroke-linecap="round"/><path d="M28 22 L 35 25 L 33 17" stroke="#CFCBE6" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="chain-card drawing">
+          <span class="tag">30 seconds later</span>
+          <svg viewBox="0 0 220 110">
+            <path d="M40 90 C 30 60, 45 30, 70 25 C 85 22, 90 35, 82 45 C 100 40, 115 55, 105 70 C 125 65, 140 80, 120 92 C 95 100, 60 100, 40 90 Z" fill="none" stroke="#16142B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="150" cy="40" r="3" fill="#16142B"/>
+            <path d="M100 20 L 108 5 M 112 20 L 118 3" stroke="#16142B" stroke-width="3" stroke-linecap="round"/>
+            <path d="M160 55 Q 180 45 195 60" stroke="#16142B" stroke-width="3" fill="none" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="chain-arrow">
+          <svg width="40" height="30" viewBox="0 0 40 30"><path d="M5 5 Q 20 15 35 25" stroke="#CFCBE6" stroke-width="2.5" fill="none" stroke-dasharray="1 7" stroke-linecap="round"/><path d="M28 22 L 35 25 L 33 17" stroke="#CFCBE6" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="chain-card guess">
+          <span class="tag">someone guesses it</span>
+          <span class="val">"Octopus crossing the street"</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona">
+    <div class="wrap">
+      <h2>Here's how the phone breaks</h2>
+      <p class="section-lead">Five steps, zero setup. In less time than it takes to order pizza, you'll have a whole chain of nonsense to show off.</p>
+      <div class="steps">
+        <div class="step">
+          <span class="num">1</span>
+          <h3>Write an impossible word</h3>
+          <p>The weirder and more specific, the better. "Octopus doing yoga" always goes wrong, and that's exactly the point.</p>
+        </div>
+        <div class="step">
+          <span class="num">2</span>
+          <h3>Someone draws it in 30 seconds</h3>
+          <p>No erasing, no cheating, and no drawing skills required. The time limit does the rest.</p>
+        </div>
+        <div class="step">
+          <span class="num">3</span>
+          <h3>The next player guesses the drawing</h3>
+          <p>They write down the first thing that comes to mind, no matter how far it strays from the original idea.</p>
+        </div>
+        <div class="step">
+          <span class="num">4</span>
+          <h3>It repeats until the end</h3>
+          <p>Word, drawing, word, drawing... the chain grows and so does the chaos, round after round.</p>
+        </div>
+        <div class="step">
+          <span class="num">5</span>
+          <h3>You see the whole chain</h3>
+          <p>Everyone together, start to finish, to discover what monster the original idea turned into.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODOS Y FUNCIONES -->
+  <section id="modos" class="board">
+    <div class="wrap">
+      <h2>Everything the game brings</h2>
+      <p class="section-lead">It's not just drawing and guessing: there are leaderboards, practice opponents, and a whole feed of other people's drawings to snoop through.</p>
+      <div class="feature-grid">
+        <div class="feature">
+          <div class="icon">⚡</div>
+          <h3>Lightning-fast matches</h3>
+          <p>Every round takes under 5 minutes. Perfect for a quick game before bed or while waiting for food to arrive.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">👥</div>
+          <h3>2 to 4 players</h3>
+          <p>Great for family dinner, the group chat, or that hangout that just needed an excuse to laugh together.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🏆</div>
+          <h3>Weekly, monthly and yearly leaderboards</h3>
+          <p>Compete for the throne. Do you have what it takes to be the best artist... or the worst, which is famous too?</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🤖</div>
+          <h3>Bot mode</h3>
+          <p>Practice alone, no pressure, before you go embarrass (lovingly) your friends in a real match.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">🖼️</div>
+          <h3>Drawing feed</h3>
+          <p>An endless parade of other players' drawings to rate. It's addictive even when you're not in a match.</p>
+        </div>
+        <div class="feature">
+          <div class="icon">✨</div>
+          <h3>Constant updates</h3>
+          <p>New words, new modes and surprises on the way, so the chain is never short on chaos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAPTURAS -->
+  <section id="capturas">
+    <div class="wrap">
+      <h2>See the chaos up close</h2>
+      <p class="section-lead">Real screenshots of matches, leaderboards and the drawing feed, straight from the app.</p>
+      <div class="shots">
+        <div class="shot"><img src="https://play-lh.googleusercontent.com/-4LJFrRPjT1HEF4swOXK_tAea4j3f3sWwnXUve-QLSsBEzCwSszggy16oQcyjSNP8xc2-i1h4H8XUVseoOvc_pI=w526-h296" alt="Telephone Pictionary match screen showing a drawing in progress" loading="lazy" width="210" height="118"></div>
+        <div class="shot"><img src="https://play-lh.googleusercontent.com/0UgGzZbA2y9EnbAxt_Jrr_ILkMBikzPT55QIpXAIduvHmderYxIAo0IVGmpSUNuk7iK99CelYwAaRJWkPwVr=w526-h296" alt="Telephone Pictionary screen for guessing a player's drawing" loading="lazy" width="210" height="118"></div>
+        <div class="shot"><img src="https://play-lh.googleusercontent.com/pJelB9O479k8b9WmirPcN1sU0n_9gi9NC1FaZ8-SKvohuOmT-_QeKyIk7hpaeqKmY21EsUKo9sE_8pLM91b3vw=w526-h296" alt="Full chain of words and drawings at the end of a match" loading="lazy" width="210" height="118"></div>
+        <div class="shot"><img src="https://play-lh.googleusercontent.com/88OEF37TUM3jitKk4Hm4yQwvQP-qB3d8y-3vEtJii4BjNx7c6yRxx4LrrSEFWf0lSF25cyZEf7CMLoLyWS1yMg=w526-h296" alt="Telephone Pictionary player leaderboard" loading="lazy" width="210" height="118"></div>
+        <div class="shot"><img src="https://play-lh.googleusercontent.com/6C4lXn6ZBsIWnqA-i_8BGh-3aBkT4T4alfKZaaa2gnCr5MDKILFd9Da5dPGx2_7cHYJAwQ5qPMIZrIddn3w=w526-h296" alt="Rateable drawing feed from other players" loading="lazy" width="210" height="118"></div>
+        <div class="shot"><img src="https://play-lh.googleusercontent.com/gcN6PaJhQcyPHWEwlxXfCCnJXote_vNLZx7mdJ1LZ_0-cFQKmTfsA0ihj7TQ68jtikSAlik8E8QgAd8e50VSTwI=w526-h296" alt="Start screen for a bot match in Telephone Pictionary" loading="lazy" width="210" height="118"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESCARGA -->
+  <section id="descarga" class="cta-band">
+    <div class="wrap">
+      <h2>Gather your people and break the phone</h2>
+      <p class="section-lead">Free on Android and iOS. Climb the leaderboards, practice against bots, and find out why a word never survives four players intact.</p>
+      <div class="store-badges">
+        <a href="https://apps.apple.com/es/app/tel%C3%A9fono-escacharrado/id6739186463" aria-label="Download on the App Store">
+          <img src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83" alt="Download on the App Store" loading="lazy">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.telefonoescacharrado&hl=en" aria-label="Get it on Google Play">
+          <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" loading="lazy">
+        </a>
+      </div>
+      <p class="price-note">Includes ads · Ad-free Premium version available for €3.99 inside the app</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <h2>Frequently asked questions</h2>
+      <p class="section-lead">What people ask us most before their first match.</p>
+      <div class="faq">
+        <details>
+          <summary>Is Telephone Pictionary free?</summary>
+          <p>Yes, the game is free and ad-supported. If you'd rather play without interruptions, you can buy the ad-free Premium version from inside the app.</p>
+        </details>
+        <details>
+          <summary>How many players do you need?</summary>
+          <p>Each match is for 2 to 4 players. You can all play from the same couch or each from your own phone, wherever you are.</p>
+        </details>
+        <details>
+          <summary>Can I play if I don't have friends online?</summary>
+          <p>Yes. The bot mode lets you practice your drawings (and your patience) without depending on anyone else being available.</p>
+        </details>
+        <details>
+          <summary>How long does a match last?</summary>
+          <p>Matches are designed to last under 5 minutes, so they fit into any spare moment: before bed, at dinner, or while waiting for food.</p>
+        </details>
+        <details>
+          <summary>Which devices is it available on?</summary>
+          <p>You can download it on Android through Google Play and on iPhone or iPad through the App Store.</p>
+        </details>
+        <details>
+          <summary>How do the rankings work?</summary>
+          <p>Every point you earn drawing or guessing counts toward three separate leaderboards: weekly, monthly, and yearly, so there's always a new race to win.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a class="brand" href="#top" style="margin-bottom:8px;">
+          <img src="https://play-lh.googleusercontent.com/gm8FfUSB_QYpm0H7lwT2YGpUlWkP2AaOkkic1Cpxy836YlvP1pGF5R6UduthFF1KNwK34ks0NaphzCmkpArvleY=s72" alt="" width="34" height="34">
+          Telephone Pictionary
+        </a>
+        <p style="max-width:36ch;margin-top:10px;">The draw-and-guess game that's taking over friend groups.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="https://play.google.com/store/apps/details?id=com.telefonoescacharrado&hl=en">Google Play</a></li>
+        <li><a href="https://apps.apple.com/es/app/tel%C3%A9fono-escacharrado/id6739186463">App Store</a></li>
+        <li><a href="https://api.crumbled.devcodelight.com/usuarios/privacy_policy/en">Privacy policy</a></li>
+        <li><a href="mailto:contact@courstube.com">Contact</a></li>
+      </ul>
+    </div>
+    <div class="fine">
+      <span>© 2026 Crazy Ideas · Telephone Pictionary</span>
+      <span>Made with a habit of breaking drawing chains</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var burger = document.getElementById('burger');
+  var links = document.getElementById('navlinks');
+  burger.addEventListener('click', function(){
+    var open = links.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  links.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      links.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    });
+  });
+</script>
+
+</body>
+</html>

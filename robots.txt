@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://telefono-escacharrado.devcodelight.com/sitemap.xml
